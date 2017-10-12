@@ -1,0 +1,86 @@
+/* #ACCORDIAN */
+
+.accordian {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 2em;
+  
+  +.accordian {
+    border-top: none;
+    margin-top: 0;
+  }
+  
+  .collapsible {
+    //display: none;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.2s ease-in-out all;
+    padding: 0 1.5em;
+    overflow: hidden;
+  }
+  
+  &.open .collapsible {
+    //display: block;
+    opacity: 1;
+    max-height: 2000px;
+    padding: 1em 1.5em 3em 1.5em;
+  }
+  
+  h4 {
+    margin: 0;
+    padding: 1.5em 1em;
+
+    span.light {
+        margin-left: .3em; 
+        font-weight: normal;
+    }
+    
+    &:hover {
+      background: rgba(0, 0, 0, 0.03);
+      cursor: pointer;
+    }
+  }
+  
+  &:last-of-type {
+      margin-bottom: 3em;
+  }
+  
+  p:last-of-type {
+      margin-bottom: 0;
+  }
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/* ACCORDIAN ARROWS */
+.accordian .arrow { 
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #888;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  float: right;
+  margin-top: .5em;
+  margin-bottom: 0;
+  margin-left: .5em;
+  margin-right: .2em;
+  
+  &.up {
+    border-bottom: 5px solid #888;
+    border-top: none;
+    margin-bottom: 2px;
+  }
+}
+
+.accordian.open .arrow {
+	border-bottom: 5px solid #888;
+	border-top: none;
+    margin-bottom: 2px;
+}

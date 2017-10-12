@@ -1,0 +1,217 @@
+/* Header & Footer */
+body {
+    background: $background-color-footer;
+}
+
+/* Header & Footer */
+.site-header,
+.site-footer {
+    a {
+        color: $text-color;
+    }
+
+    a:hover {
+        color: $link-color-dark;
+        text-decoration: none;
+    }
+}
+
+/* Header Only */
+.site-header {
+    background: $background-color-header;
+    border-bottom: $border-width solid $border-color;
+    .container {
+        padding-top: .5em;
+        
+        @media (min-width: $breakpoint-small)  {
+            padding-top: .75em;
+            //padding-bottom: .5em;
+        }
+    }
+}
+
+/* Site Branding */
+.site-branding {
+    text-align: center;
+
+    h1 {
+        font-size: 1.5em;
+        font-weight: normal;
+        font-style: normal;
+        margin: 0;
+        color: $text-color-light;
+        padding: .5em 0 .4em 0;
+
+        a {
+            font-weight: bold;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: $breakpoint-small)  {
+            float: left;
+    }
+}
+
+/* Footer Only */
+.site-footer {
+    background: $background-color-footer;
+    border-top: $border-width solid $border-color;
+    .container{
+        padding-top: .25em;
+        padding-bottom: .25em;
+        
+        @media (min-width: $breakpoint-small)  {
+            padding-bottom: .5em;
+        }
+    }
+}
+
+/* Main Site Section (Main Content Area) */
+.site-main {
+    background: $background-color-body;
+    //padding-bottom: 1.5em;
+}
+
+/* Main Sections */
+section {
+    padding: 1.5em 0;
+}
+
+
+
+/* Hero Sections */
+.container .hero {
+    position: relative;
+    top: 2em;
+    margin-bottom: 3em;
+}
+.hero {
+    background: $background-color-hero;
+    border-top: none;
+    //border-bottom: 1px solid $border-color;
+    padding: 4em 1em 3em 1em;
+    margin-bottom: 1.5em;
+
+    h1, h2 {
+        font-size: 3em;
+        line-height: 1.1em;
+        max-width: 10em;
+    }
+
+    p {
+        max-width: 22em;
+    }
+
+    &.text-centered {
+        h1,h2,h3,h4,h5,h6, p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &.full-width {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Colored Sections */
+
+section.superlightgrey {
+    background: #f9f9f9;
+    padding: 5em 0 2em 0;
+}
+
+section.lightgrey {
+    background: #e0e0e0;
+    padding: 5em 0 2em 0;
+}
+
+section.darkgrey {
+    background: #222;
+    color: #fff;
+    padding: 5em 0 2em 0;
+}
+
+section.hero {
+    &.superlightgrey,
+    &.lightgrey,
+    &.darkgrey {
+        padding: 6em 1em 5em 1em;
+    }
+}
+
+/* Sub Pages with Multiple Column Layout */
+
+.subpage-sidebar {
+    @media (min-width: $breakpoint-small)  {
+        float: left;
+        width: 21%;
+        padding-right: 4%; 
+    }
+    
+    .subheader {
+        font-size: 1em;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: .5em;
+        margin-bottom: 0;
+        padding: .5em 0;
+        border-bottom: $border-width solid $border-color;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: $text-color-light;
+    }
+}
+
+.subpage-main {
+    @media (min-width: $breakpoint-small)  {
+        float: right;
+        width: 70%;
+        padding-left: 4%;
+        border-left: $border-width solid $border-color; 
+    }
+    
+    section:first-child {
+        padding-top: 0;
+    }
+    
+    section:last-child {
+        padding-bottom: 5em;    
+    }
+    margin-bottom: 1.5em;
+}
+
+.subpage-navigation {
+    font-family: $navigation-font-family;
+    padding: 0;
+    ul {
+        //border-top: 1px solid #eee;
+        li {
+            list-style: none;
+            margin-left: 0;
+            
+            a {
+                text-decoration: none;
+                display: block;
+                padding: .5em .875em;
+                border-bottom: $border-width solid $border-color;
+            }
+            
+            a:hover {
+                //background: #fcfcfc;
+            }
+            
+            ul {
+                border-top: none;
+                li {
+                    a {
+                        padding-left: 1.875em;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

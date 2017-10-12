@@ -1,0 +1,220 @@
+/* Sub Pages with Multiple Column Layout */
+
+.subpage-sidebar {
+    @media (min-width: $breakpoint-small)  {
+        float: left;
+        width: 21%;
+        padding-right: 4%; 
+    }
+    
+    .subheader {
+        font-size: 1em;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: .5em;
+        margin-bottom: 0;
+        padding: .5em 0;
+        border-bottom: 1px solid $border-color;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: $text-color-light;
+    }
+}
+
+.subpage-main {
+    @media (min-width: $breakpoint-small)  {
+        float: right;
+        width: 70%;
+        padding-left: 4%;
+        border-left: 1px solid $border-color; 
+    }
+    
+    section:first-child {
+        padding-top: 0;
+    }
+    
+    section:last-child {
+        padding-bottom: 5em;    
+    }
+}
+
+.subpage-navigation {
+    font-family: $navigation-font-family;
+    padding: 0;
+    ul {
+        //border-top: 1px solid #eee;
+        li {
+            list-style: none;
+            margin-left: 0;
+            
+            a {
+                text-decoration: none;
+                display: block;
+                padding: .5em .875em;
+                border-bottom: 1px solid $border-color;
+            }
+            
+            a:hover {
+                //background: #fcfcfc;
+            }
+            
+            ul {
+                border-top: none;
+                li {
+                    a {
+                        padding-left: 1.875em;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Sub page with list items */
+.list-item {
+    padding: 2em 0;
+    
+    .featured-image {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+
+    article {
+        margin-left: 35%;
+        
+        h2 {
+            margin-top: 0;
+        }
+    }
+    
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.list-item + .list-item {
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    padding-top: 4em;
+}
+
+/* Swap the display order of two columns */
+.orderswap .one-half.column:first-child {
+    float: right;
+    margin-right: 0;
+}
+
+/* Articles */
+article {
+    max-width: 38em;
+    margin: 0 auto 8em auto; 
+    
+    h1 {
+	   text-align: center;
+    }
+    
+    h1 + h2 {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        font-weight: normal;
+        margin-bottom: 1em;
+    }
+
+    .date {
+        text-align: center;
+        font-size: .625em;
+        line-height: .625em;
+        color: #999;
+        font-weight: normal;
+    }
+
+    .date + p {
+        margin-top: 2em;
+    }
+    
+}
+
+/* Thumb Lists */
+ul.thumblist {
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 3em 0;
+        clear: both; 
+        
+        img {
+            max-width: 30%;
+            margin: 0 2em 1em 0;
+            float: left;
+        }
+        
+    }
+    
+    li+li {
+        border-top: 1px solid #ddd;
+    }
+    
+    @media (max-width: 767px) {
+        li img {
+            max-width: 100%;
+            margin: 0 0 1em 0;
+            float: none;
+        }
+    }
+    
+}
+
+ul.thumblist-grid {
+    
+    margin: 2em 0;
+    
+    li {
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 2em;
+        width: 46%;
+        margin-right: 8%;
+        float: left;
+        text-align: center;
+        font-size: .8em;
+        
+        a {
+            outline: none;
+        }
+        
+        a img {
+            transition: border-color .3s ease;
+            border-color: #fff;
+        } 
+        
+        a img:hover {
+            border: 3px solid #39c;
+            margin: -3px;
+        }
+        
+        h5, p {
+            line-height: 1.2em;
+        }
+        
+    }
+    li:nth-child(even) {
+        margin-right: 0;
+    }
+    
+    @media (min-width: 768px) {
+        li {
+            width: 19%;
+            //margin-right: 8%;
+        }
+        li:nth-child(even) {
+            margin-right: 8%;
+        }
+        li:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+}

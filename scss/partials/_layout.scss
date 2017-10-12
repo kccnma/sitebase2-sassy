@@ -1,0 +1,119 @@
+/* LAYOUT */
+/*
+#MEDIA QUERIES (Mobile First)
+	#DEFAULT+ (Mobile First - Default Settings in the CSS Above)
+	#SMALL- (Mobile Only Overrides) - max-width: 767px
+	#MEDIUM+ (Tablet) - min-width: 768px
+	#LARGE+ (Desktop) - min-width: 1050px
+	#EXTRALARGE+ (Desktop+) - min-width: 1250px  */
+
+/* SMALL+ (Mobile First Defaults) */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* SMALL- MEDIA QUERY (e.g. for mobile overrides) */
+@media (max-width: $breakpoint-small - 1)  {
+
+    /* Inherits Small/Mobile Body Type from Above */
+    /* Inherits Small/Mobile Fluid Width from Above */
+
+}
+
+/* #MEDIUM+ MEDIA QUERY */
+@media (min-width: $breakpoint-small)  {
+
+    /* Inherits Small/Mobile Body Type from Above */
+    /* Inherits Small/Mobile Fluid Width from Above */
+
+}
+
+/* #LARGE+ MEDIA QUERY */
+@media (min-width: $breakpoint-medium) {
+
+    /* LARGE BODY TYPE */
+    body {
+        font-size: 100%; /* 16px; */
+    }
+
+    /* FIXED WIDTH */
+    .container {
+        width: $breakpoint-medium - 150;
+        padding: 0 50px;
+    }
+
+}
+
+/* #EXTRA-LARGE+ MEDIA QUERY */
+@media (min-width: $breakpoint-large) {
+
+    /* EXTRA-LARGE BODY TYPE */
+    body { font-size: 112.5%; /* 18px; */ }
+
+    /* FIXED WIDTH */
+    .container {
+        width: $breakpoint-large - 150;
+    }
+
+}
+
+
+/* Default Grid (on SMALL+ Screen Sizes) */
+
+.row {
+	margin: 0;
+}
+
+.column {
+    margin: 0 0 3em 0;
+}
+
+
+
+/* Medium Grid (on MEDIUM+ Screen Sizes) */
+@media (min-width:  $breakpoint-small) {
+
+
+    .column {
+        float: left;
+        margin-right: 8%;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+    .column.centered {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .one-whole.column {	width: 100%; }
+    .one-half.column {	width: 46%; }
+    .one-third.column {	width: 28%; }
+    .two-thirds.column { width: 64%; }
+    .one-fourth.column { width: 19%; }
+    .one-fifth.column { width: 13.6%; }
+
+}
+
+/* #CLEARFIXES */
+
+.group:after,
+.row:after,
+.container:after,
+.nav:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-size: 0;
+}

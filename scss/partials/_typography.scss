@@ -1,0 +1,159 @@
+/* #TYPOGRAPHY  */
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
+body {
+    font-family: $body-font-family;
+    color: $text-color;
+    font-size: 87.5%; /* 14px; */
+    line-height: 1.5em; /* 14px x 1.5em = 21px */
+}
+
+/* #HEADINGS
+    Based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    margin: .5em 0;
+}
+
+h1 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.4em;
+}
+
+h6 {
+  font-size: 1em; /* 16px / 16px = 1em */
+  line-height: 1.5em;
+}
+
+/* #PARAGRAPHS */
+p {
+  margin: 0 0 .5em 0;
+}
+
+/* #LINKS */
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-color-dark;
+  //text-decoration: underline;
+}
+
+/* #LISTS */
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  padding-bottom: 1em;
+}
+
+ul li ul, ul li ol, ol li ul, ol li ol {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+li {
+  margin-left: 1.875em;
+}
+
+/* #BLOCK QUOTES  */
+blockquote {
+  font-size: 1.142em;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  border-top: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+}
+
+blockquote cite {
+  display: block;
+  opacity: .8;
+  font-size: .875em;
+}
+
+blockquote cite:before {
+  content: '\2014';
+  margin-right: .25em;
+}
+
+/* #HELPERS */
+.text-centered {
+  text-align: center;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.subheader {
+    color: $text-color-light;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: normal;
+    clear: both;  
+} 
+
+/* HORIZONTAL RULES */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2em 0;
+}
+
+
+/* #CODE  */
+pre, code {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: .875em;
+}
+
+pre {
+    margin: 1.5em 0 3em 0;
+    line-height: 1.2em;
+}
+
+code {
+    display: block;
+    padding: 1em 1.875em;
+    background: #f9f9f9;
+    border: 1px solid $border-color;
+    border-left: 2px solid #ccc;
+    overflow-x: auto; 
+}

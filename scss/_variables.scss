@@ -1,0 +1,86 @@
+// Typography: Helvetica (default)
+$body-font-family: Helvetica, Arial, sans-serif;
+$heading-font-family: Helvetica, Arial, sans-serif;
+$navigation-font-family: Helvetica, Arial, sans-serif;
+
+// Colors (default theme)
+$text-color: #333;
+$text-color-light: #999;
+$link-color: #39c;
+$link-color-dark: #069;
+$accent-color: #000;
+$background-color-body: #fff;
+$background-color-header: #fff;
+$background-color-footer: #fff;
+$background-color-hero: #ddd;
+
+// Borders
+$border-color: #ccc;
+$border-width: 0px;
+
+// Breakpoints 
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;  
+
+// Themes
+
+$theme: 'default';
+@if ($theme == 'lightgrey') {
+    // Light Grey
+    $text-color: #333;
+    $text-color-light: #999;
+    $link-color: #39c;
+    $link-color-dark: #069;
+    $accent-color: #000;
+    $background-color-body: #fff;
+    $background-color-header: #e3e3e3;
+    $background-color-footer: #eee;
+    $background-color-hero: #f0f0f0;
+    $border-color: #ccc;
+    $border-width: 0px;
+} @else if ($theme == 'darkgrey') {
+    // Dark Grey
+    $text-color: #ccc;
+    $text-color-light: #999;
+    $link-color: #39c;
+    $link-color-dark: #6cf;
+    $accent-color: #444;
+    $background-color-body: #000;
+    $background-color-header: #000;
+    $background-color-footer: #000;
+    $background-color-hero: #333;
+    $border-color: #222;
+    $border-width: 0px;
+} @else if ($theme == 'wireframe') {
+    // Wireframe
+    $body-font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    $heading-font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    $navigation-font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    $text-color: #888;
+    $text-color-light: #aaa;
+    $link-color: #666;
+    $link-color-dark: #444;
+    $accent-color: #000;
+    $background-color-body: #fff;
+    $background-color-header: #e3e3e3;
+    $background-color-footer: #eee;
+    $background-color-hero: #f0f0f0;
+    $border-color: #ccc;
+    $border-width: 0px;
+} @else if ($theme == 'white') {
+    // White (default)
+    $text-color: #333;
+    $text-color-light: #999;
+    $link-color: #39c;
+    $link-color-dark: #069;
+    $accent-color: #000;
+    $background-color-body: #fff;
+    $background-color-header: #fff;
+    $background-color-footer: #fff;
+    $background-color-hero: #ddd;
+    $border-color: #ccc;
+    $border-width: 0px;
+}
+
+

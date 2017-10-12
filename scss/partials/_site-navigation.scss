@@ -1,0 +1,102 @@
+/* #SITE NAVIGATION  */
+/* Default Site-Navigation Menu (both header & footer) */
+.site-navigation  {
+    font-family: $navigation-font-family;
+
+    .menu-button {
+        display: none;
+    }
+
+    ul {
+        //border-top: $border-width solid $border-color;
+        //margin: 1em 0 -.5em 0;
+        padding: .5em 0;
+        text-align: center;
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            display: inline-flex; //for nest nav items
+
+            a {
+                display: block;
+                padding: .5em .75em .4em .75em;
+            }
+
+            a:hover {
+                //background: #fcfcfc;
+            }
+            
+            ul {
+                border-top: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    
+
+    @media (min-width: $breakpoint-small)  {
+        ul {
+            border-top: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    margin: 0 .5em;
+                    padding: 1em .5em .75em .5em;
+                }
+            
+                /* DROP DOWN MENU */
+                /* stack nested lists */
+                li { 
+                    display: block;
+                }
+                /* hide nested lists by default */
+                ul {
+                    text-align: left;
+                    position: absolute;
+                    z-index: 100;
+                    left: -9000px;
+                    background: $background-color-header;
+                    margin-left: .5em;
+                }
+
+                /* show nested lists on hover */
+                &:hover ul {
+                    left: auto;
+                }
+            
+                /* SELECTED STATE */
+                &.selected,
+                &.current-menu-item {
+                    a {
+                        font-weight: bold;
+                    }
+                    li a {
+                        font-weight: normal;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* Default Site-Navigation (header only) */
+.site-header .site-navigation {
+    @media (min-width: $breakpoint-small)  {
+        float: right;
+    }
+}
+
+/* Default Site-Navigation (footer only) */
+.site-footer .site-navigation {
+    ul {
+        border-top: none;
+        margin: 0;
+    }
+}
