@@ -1,131 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Site Name</title>
 
-    <!-- VIEWPORT FOR MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>Site Name</title>
+  <meta name="description"
+    content="A minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
 
-    <!-- MAIN CSS FILE -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <!-- VIEWPORT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <header class="site-header toggle-nav">
-      <div class="container">
-        <div class="site-branding">
-          <h1><a href="index.html">Site Name</a></h1>
-        </div>
-        <nav class="site-navigation ">
-          <div class="menu-button navicon">Menu</div>
-          <ul class="nav">
-            <li class="selected"><a href="index.html">Home</a></li>
-            <li>
-              <a href="pages.html">Pages</a>
-              <ul>
-                <li><a href="page.html">Sub Page</a></li>
-                <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+  <!-- FOR IE/EDGE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- MAIN CSS FILE -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="site-header toggle-nav">
+    <div class="container">
+      <div class="site-branding">
+        <h1><a href="index.html">Site Name</a></h1>
       </div>
-      <!-- END CONTAINER -->
-    </header>
+      <nav class="site-navigation toggle-nav">
+        <div class="menu-button navicon">Menu</div>
+        <ul class="nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li>
+            <a href="pages.html">Pages</a>
+            <ul>
+              <li><a href="page.html">Sub Page</a></li>
+              <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
+              <li><a href="post.html">Post</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END CONTAINER -->
+  </header>
 
-    <main class="site-main">
-      <div class="container">
-        <section class="hero text-centered">
-          <h2>Home Page</h2>
-          <p>
-            This is an example home page with a hero section at the top with sub
-            sections stacked below.
-          </p>
-          <p>
-            <a class="button" href="#">Button</a>
-            <a class="button alt" href="#">Alt Button</a>
-          </p>
-        </section>
+  <main class="site-main">
+    <div class="container">
+      <section class="hero text-centered">
+        <h2>Home Page</h2>
+        <p>
+          This is an example home page with a hero section at the top with sub
+          sections stacked below.
+        </p>
+        <p>
+          <a class="button" href="#">Button</a>
+          <a class="button alt" href="#">Alt Button</a>
+        </p>
+      </section>
 
-        <section>
-          <div class="row">
-            <div class="one-third column">
-              <img
-                src="img/placeholder-1x1.gif"
-                class="scale-with-grid"
-                alt="placeholder"
-              />
-              <h3>Heading 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                semper, nunc quis euismod porta, ligula dolor interdum dui,
-                quis.
-              </p>
-              <p><a class="button" href="#">Button</a></p>
-            </div>
-            <div class="one-third column">
-              <img
-                src="img/placeholder-1x1.gif"
-                class="scale-with-grid"
-                alt="placeholder"
-              />
-              <h3>Heading 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                semper, nunc quis euismod porta, ligula dolor interdum dui,
-                quis.
-              </p>
-              <p><a class="button" href="#">Button</a></p>
-            </div>
-            <div class="one-third column">
-              <img
-                src="img/placeholder-1x1.gif"
-                class="scale-with-grid"
-                alt="placeholder"
-              />
-              <h3>Heading 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                semper, nunc quis euismod porta, ligula dolor interdum dui,
-                quis.
-              </p>
-              <p><a class="button" href="#">Button</a></p>
-            </div>
+      <section>
+        <div class="row">
+          <div class="one-third column">
+            <img src="img/placeholder-1x1.gif" alt="placeholder" />
+            <h3>Heading 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              semper, nunc quis euismod porta, ligula dolor interdum dui,
+              quis.
+            </p>
+            <p><a class="button" href="#">Button</a></p>
           </div>
-        </section>
-      </div>
-      <!-- END CONTAINER -->
+          <div class="one-third column">
+            <img src="img/placeholder-1x1.gif" alt="placeholder" />
+            <h3>Heading 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              semper, nunc quis euismod porta, ligula dolor interdum dui,
+              quis.
+            </p>
+            <p><a class="button" href="#">Button</a></p>
+          </div>
+          <div class="one-third column">
+            <img src="img/placeholder-1x1.gif" alt="placeholder" />
+            <h3>Heading 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              semper, nunc quis euismod porta, ligula dolor interdum dui,
+              quis.
+            </p>
+            <p><a class="button" href="#">Button</a></p>
+          </div>
+        </div>
+      </section>
 
-      <!--    
-    <section class="superlightgrey">
-        <div class="container">
-            <div class="row">
-                <div class="one-whole column text-centered">
-                    <h2>Heading 2</h2>
-                    <blockquote>
-                        This is a blockquote. Donec sed rhoncus massa. Suspendisse rutrum viverra felis. Vestibulum augue lacus, ullamcorper non suscipit nec, ornare et mauris. Proin mattis fermentum nibh quis gravida.
-                        <cite>Citation Source</cite>
-                    </blockquote>
+      <section class="demo">
+        <h1>Base Layout</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+          fringilla ipsum, sed bibendum augue. Nullam euismod nec mauris
+          elementum porta. Sed varius nisl eu lobortis fringilla. Morbi id
+          elit sollicitudin, venenatis lacus id, cursus quam. Aliquam mollis
+          orci vel enim fermentum adipiscing. Duis facilisis lorem a nulla
+          porttitor sagittis.
+        </p>
+
+        <h2>Grid</h2>
+
+        <div class="row">
+          <div class="one-whole column">
+            <p>One Whole Column</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-half column">
+            <p>One-half Column</p>
+          </div>
+          <div class="one-half column">
+            <p>One-half Column</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-third column">
+            <p>One-third Column</p>
+          </div>
+          <div class="one-third column">
+            <p>One-third Column</p>
+          </div>
+          <div class="one-third column">
+            <p>One-third Column</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-third column">
+            <p>One-third Column</p>
+          </div>
+          <div class="two-thirds column">
+            <p>Two-thirds Column</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-fourth column">
+            <p>One-fourth Column</p>
+          </div>
+          <div class="one-fourth column">
+            <p>One-fourth Column</p>
+          </div>
+          <div class="one-fourth column">
+            <p>One-fourth Column</p>
+          </div>
+          <div class="one-fourth column">
+            <p>One-fourth Column</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-third column centered">
+            <p>One-third Column Centered</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-half column centered">
+            <p>One-half Column Centered</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="two-thirds column centered">
+            <p>Two-thirds Column Centered</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- END CONTAINER -->
+
+    <!--
+        <section class="superlightgrey">
+            <div class="container">
+                <div class="row">
+                    <div class="one-whole column text-centered">
+                        <h2>Heading 2</h2>
+                        <blockquote>
+                            This is a blockquote. Donec sed rhoncus massa. Suspendisse rutrum viverra felis. Vestibulum augue lacus, ullamcorper non suscipit nec, ornare et mauris. Proin mattis fermentum nibh quis gravida.
+                            <cite>Citation Source</cite>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> 
-    --></main>
+        </section>
+      -->
+  </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <nav class="site-navigation">
-          <ul class="nav group">
-            <li class="selected"><a href="index.html">Home</a></li>
-            <li><a href="pages.html">Sub Pages</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- END CONTAINER -->
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="site-navigation">
+        <ul class="nav group">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="pages.html">Sub Pages</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END CONTAINER -->
+  </footer>
 
-    <!-- MAIN JS -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- MAIN JS -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

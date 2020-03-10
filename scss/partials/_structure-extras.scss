@@ -1,0 +1,25 @@
+/* Colored Sections */
+
+section.superlightgrey {
+  background: #f9f9f9;
+  padding: 5em 0 2em 0;
+}
+
+section.lightgrey {
+  background: #e0e0e0;
+  padding: 5em 0 2em 0;
+}
+
+section.darkgrey {
+  background: #222;
+  color: #fff;
+  padding: 5em 0 2em 0;
+}
+
+section.hero {
+  &.superlightgrey,
+  &.lightgrey,
+  &.darkgrey {
+    padding: 6em 1em 5em 1em;
+  }
+}

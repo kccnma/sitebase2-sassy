@@ -1,177 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Site Name | Sub Title</title>
 
-    <!-- VIEWPORT FOR MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>Site Name | Sub Title</title>
+  <meta name="description"
+    content="A sub-page example for Site Base, minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
 
-    <!-- MAIN CSS FILE -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <!-- VIEWPORT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <header class="site-header toggle-nav">
-      <div class="container">
-        <div class="site-branding">
-          <h1><a href="index.html">Site Name</a> / Sub Title</h1>
+  <!-- FOR IE/EDGE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- MAIN CSS FILE -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="site-header toggle-nav">
+    <div class="container">
+      <div class="site-branding">
+        <h1><a href="index.html">Site Name</a> / Sub Title</h1>
+      </div>
+      <nav class="site-navigation ">
+        <div class="menu-button navicon">Menu</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected">
+            <a href="pages.html">Pages</a>
+            <ul>
+              <li><a href="page.html">Sub Page</a></li>
+              <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
+              <li><a href="post.html">Post</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END CONTAINER -->
+  </header>
+
+  <main class="site-main">
+    <section class="hero text-centered">
+      <h1>Sub Page</h1>
+      <p>This is a full-width sub page example.</p>
+    </section>
+
+    <div class="container">
+      <section>
+        <h1>This is a Heading 1</h1>
+        <h2>This is a Heading 2</h2>
+        <h3>This is a Heading 3</h3>
+        <h4>This is a Heading 4</h4>
+        <h5>This is a Heading 5</h5>
+        <h6>This is a Heading 6</h6>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
+          fringilla ipsum, sed bibendum augue. Nullam euismod nec mauris
+          elementum porta. Sed varius nisl eu lobortis fringilla. Morbi id
+          elit sollicitudin, venenatis lacus id, cursus quam. Aliquam mollis
+          orci vel enim fermentum adipiscing. Duis facilisis lorem a nulla
+          porttitor sagittis.
+        </p>
+
+        <p>
+          Suspendisse pulvinar bibendum laoreet. Suspendisse eget dignissim
+          risus. Cras eget sodales enim. Phasellus accumsan dui metus, quis
+          vulputate turpis congue at. Praesent rutrum consequat rhoncus.
+          Maecenas adipiscing justo vitae massa porta pretium. In egestas orci
+          vehicula, tempus lorem ut, facilisis metus.
+        </p>
+
+        <p>
+          Vivamus eu mollis velit. Maecenas id massa libero. Aliquam accumsan
+          mauris vulputate purus volutpat vestibulum. Phasellus sed tellus id
+          tortor ornare molestie. Quisque massa sapien, elementum sed tortor
+          vitae, suscipit congue massa. Curabitur tempor arcu eget leo
+          placerat, a porta augue pharetra. Nulla velit nibh, laoreet at
+          hendrerit sit amet, adipiscing eget dolor.
+        </p>
+
+        <h4>Unordered List:</h4>
+        <ul>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>
+            Nested Unordered List:
+            <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </li>
+          <li>
+            Nested Ordered List:
+            <ol>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ol>
+          </li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+
+        <h4>Ordered List:</h4>
+        <ol>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>
+            Nested Unordered List:
+            <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </li>
+          <li>
+            Nested Ordered List:
+            <ol>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ol>
+          </li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ol>
+
+        <h4>Links:</h4>
+        <p>This is a <a href="#">link</a>.</p>
+
+        <h4>Block Quotes:</h4>
+        <blockquote>
+          This is a blockquote. Donec sed rhoncus massa. Suspendisse rutrum
+          viverra felis. Vestibulum augue lacus, ullamcorper non suscipit nec,
+          ornare et mauris. Proin mattis fermentum nibh quis gravida.
+          <cite>Citation Source</cite>
+        </blockquote>
+
+        <h4>Helper Classes:</h4>
+        <p class="text-centered">This is center-aligned text</p>
+
+        <h4>Buttons:</h4>
+        <a href="#" class="button">Default Link Button</a>
+        <a href="#" class="button alt">Alt Link Button</a>
+        <button>Default Button Element</button>
+
+        <h4>Horizontal Rule:</h4>
+        <hr />
+
+        <h4>Images:</h4>
+        <img src="http://placehold.it/1500x500" />
+
+        <h4>Videos:</h4>
+        <div class="video">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/ru_mj49u_Xc?rel=0&amp;showinfo=0"
+            frameborder="0" allowfullscreen></iframe>
         </div>
-        <nav class="site-navigation ">
-          <div class="menu-button navicon">Menu</div>
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="selected">
-              <a href="pages.html">Pages</a>
-              <ul>
-                <li><a href="page.html">Sub Page</a></li>
-                <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- END CONTAINER -->
-    </header>
-
-    <main class="site-main">
-      <section class="hero text-centered">
-        <h1>Sub Page</h1>
-        <p>This is a full-width sub page example.</p>
       </section>
+    </div>
+    <!-- END CONTAINER -->
+  </main>
 
-      <div class="container">
-        <section>
-          <h1>This is a Heading 1</h1>
-          <h2>This is a Heading 2</h2>
-          <h3>This is a Heading 3</h3>
-          <h4>This is a Heading 4</h4>
-          <h5>This is a Heading 5</h5>
-          <h6>This is a Heading 6</h6>
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="site-navigation">
+        <ul class="nav group">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="pages.html">Sub Pages</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END CONTAINER -->
+  </footer>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-            fringilla ipsum, sed bibendum augue. Nullam euismod nec mauris
-            elementum porta. Sed varius nisl eu lobortis fringilla. Morbi id
-            elit sollicitudin, venenatis lacus id, cursus quam. Aliquam mollis
-            orci vel enim fermentum adipiscing. Duis facilisis lorem a nulla
-            porttitor sagittis.
-          </p>
+  <!-- MAIN JS -->
+  <script src="js/script.js"></script>
+</body>
 
-          <p>
-            Suspendisse pulvinar bibendum laoreet. Suspendisse eget dignissim
-            risus. Cras eget sodales enim. Phasellus accumsan dui metus, quis
-            vulputate turpis congue at. Praesent rutrum consequat rhoncus.
-            Maecenas adipiscing justo vitae massa porta pretium. In egestas orci
-            vehicula, tempus lorem ut, facilisis metus.
-          </p>
-
-          <p>
-            Vivamus eu mollis velit. Maecenas id massa libero. Aliquam accumsan
-            mauris vulputate purus volutpat vestibulum. Phasellus sed tellus id
-            tortor ornare molestie. Quisque massa sapien, elementum sed tortor
-            vitae, suscipit congue massa. Curabitur tempor arcu eget leo
-            placerat, a porta augue pharetra. Nulla velit nibh, laoreet at
-            hendrerit sit amet, adipiscing eget dolor.
-          </p>
-
-          <h4>Unordered List:</h4>
-          <ul>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>
-              Nested Unordered List:
-              <ul>
-                <li>List Item</li>
-                <li>List Item</li>
-              </ul>
-            </li>
-            <li>
-              Nested Ordered List:
-              <ol>
-                <li>List Item</li>
-                <li>List Item</li>
-              </ol>
-            </li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ul>
-
-          <h4>Ordered List:</h4>
-          <ol>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>
-              Nested Unordered List:
-              <ul>
-                <li>List Item</li>
-                <li>List Item</li>
-              </ul>
-            </li>
-            <li>
-              Nested Ordered List:
-              <ol>
-                <li>List Item</li>
-                <li>List Item</li>
-              </ol>
-            </li>
-            <li>List Item</li>
-            <li>List Item</li>
-          </ol>
-
-          <h4>Links:</h4>
-          <p>This is a <a href="#">link</a>.</p>
-
-          <h4>Block Quotes:</h4>
-          <blockquote>
-            This is a blockquote. Donec sed rhoncus massa. Suspendisse rutrum
-            viverra felis. Vestibulum augue lacus, ullamcorper non suscipit nec,
-            ornare et mauris. Proin mattis fermentum nibh quis gravida.
-            <cite>Citation Source</cite>
-          </blockquote>
-
-          <h4>Helper Classes:</h4>
-          <p class="text-centered">This is center-aligned text</p>
-
-          <h4>Buttons:</h4>
-          <a href="#" class="button">Default Link Button</a>
-          <a href="#" class="button alt">Alt Link Button</a>
-          <button>Default Button Element</button>
-
-          <h4>Images:</h4>
-          <img src="http://placehold.it/1500x500" class="scale-with-grid" />
-
-          <h4>Videos:</h4>
-          <div class="video">
-            <iframe
-              width="1280"
-              height="720"
-              src="https://www.youtube.com/embed/ru_mj49u_Xc?rel=0&amp;showinfo=0"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <h4>Horizontal Rule:</h4>
-          <hr />
-        </section>
-      </div>
-      <!-- END CONTAINER -->
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <nav class="site-navigation">
-          <ul class="nav group">
-            <li><a href="index.html">Home</a></li>
-            <li class="selected"><a href="pages.html">Sub Pages</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- END CONTAINER -->
-    </footer>
-
-    <!-- MAIN JS -->
-    <script src="js/script.js"></script>
-  </body>
 </html>

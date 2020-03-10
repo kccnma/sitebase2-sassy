@@ -1,0 +1,48 @@
+/* #CODE  */
+pre,
+code {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+  font-size: 0.875em;
+}
+
+pre {
+  margin: 1.5em 0 3em 0;
+  line-height: 1.2em;
+}
+
+code {
+  display: block;
+  padding: 1em 1.875em;
+  background: #f9f9f9;
+  border: 1px solid $border-color;
+  border-left: 2px solid #ccc;
+  overflow-x: auto;
+}
+
+/* BLOCKED LOAD */
+
+.blocked {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  .site-header a,
+  .site-footer a,
+  .site-branding h1,
+  .site-branding h1 a,
+  li,
+  blockquote,
+  a.button,
+  a.button.alt,
+  button {
+    color: #eee;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
