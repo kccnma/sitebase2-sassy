@@ -15,17 +15,16 @@
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .container {
-  width: 100%;
+  max-width: $breakpoint-medium - 50;
   margin: 0 auto;
   padding: 0 4%; 
 }
 
 /* SMALL- MEDIA QUERY (e.g. for mobile overrides) */
-@media (max-width: $breakpoint-small - 1) {
+@media (max-width: ($breakpoint-small - 1)) {
   /* Inherits Small/Mobile Body Type from Above */
   /* Inherits Small/Mobile Fluid Width from Above */
 }
@@ -41,11 +40,6 @@ body {
   /* LARGE BODY TYPE */
   body {
     font-size: 100%; /* 16px; */
-  }
-
-  /* FIXED WIDTH */
-  .container {
-    max-width: $breakpoint-medium - 50;
   }
 }
 
@@ -63,62 +57,59 @@ body {
 }
 
 /* Grid */ 
+$grid-column-gap: 4%;
 
-$grid-column-gap: 2%;
-
-//.row {}
-
-.row > .column {
-  margin-bottom: $grid-column-gap;
+section,
+.container {
+  overflow-x: hidden;
 }
+
 
 @media (min-width: $breakpoint-small) {
   .row {
-    margin-left: -$grid-column-gap/2;
-    margin-right: -$grid-column-gap/2;
+    margin-left: calc($grid-column-gap / 2 * -1);
+    margin-right: calc($grid-column-gap / 2 * -1);
     display: flex;
     flex-wrap: wrap;
-    // align-items: center;
-    justify-content: center;
     &.swapped {
       flex-direction: row-reverse;
     }
     &.centered {
-      flex-direction: column;
-      .column {
-        flex-grow: 0;
-      }
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .row > .column {
-    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+    margin: 0 calc($grid-column-gap / 2) calc($grid-column-gap / 2) calc($grid-column-gap / 2);
     flex-grow: 1;
     //semantic width-based class names
     &.one-half {
-      width: 50 - $grid-column-gap;
+      max-width: 50 - $grid-column-gap;
     }
     &.one-third {
-      width: 33.3333 - $grid-column-gap;
+      max-width: 33.3333 - $grid-column-gap;
     }
     &.two-thirds {
-      width: 66.6666 - $grid-column-gap;
+      max-width: 66.6666 - $grid-column-gap;
     }
     &.one-fourth {
-      width: 25 - $grid-column-gap;
+      max-width: 25 - $grid-column-gap;
     }
     &.three-fourths {
-      width: 75 - $grid-column-gap;
+      max-width: 75 - $grid-column-gap;
     }
     //semantic pushes
     &.push-one-third {
-      margin-left: 33.3333 + $grid-column-gap/2;
+      margin-left: 33.3333 + calc($grid-column-gap / 2);
     }
     &.push-one-fourth {
-      margin-left: 25 + $grid-column-gap/2;
+      margin-left: 25 + calc($grid-column-gap / 2);
     }
     &.centered {
-      flex-grow: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -134,4 +125,4 @@ $grid-column-gap: 2%;
     padding: 0 .5em; 
     max-width: none;
   }
-}
+} 

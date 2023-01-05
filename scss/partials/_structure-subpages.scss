@@ -34,7 +34,7 @@ article {
   p + h5,
   p + h6 {
     margin-top: 1em;
-  }
+  } 
 }
 
 /* Posts */
@@ -44,9 +44,14 @@ article {
 
 /* Sub Pages with Multiple Column Layout */
 
+@media (min-width: $breakpoint-small) {
+  .subpage-twocol {
+    display: flex;
+  } 
+}
+
 .subpage-sidebar {
   @media (min-width: $breakpoint-small) {
-    float: left;
     width: 21%;
     padding-right: 4%;
   }
@@ -61,13 +66,12 @@ article {
     border-bottom: 1px solid $border-color;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: $text-color-light;
+    color: $text-color-light; 
   }
 }
 
 .subpage-main {
   @media (min-width: $breakpoint-small) {
-    float: right;
     width: 70%;
     padding-left: 4%;
     border-left: 1px solid $border-color;
@@ -152,10 +156,10 @@ article {
 }
 
 /* OLD/LEGACY SUPPORT FOR PRE-FLEXBOX ORDERSWAP */
-.orderswap .one-half.column:first-child {
-  float: right;
-  margin-right: 0;
-}
+// .orderswap .one-half.column:first-child {
+//   float: right;
+//   margin-right: 0;
+// }
 
 /* OLD VERTICAL CENTERING MARKUP PRE-FLEXBOX */
 .vert-parent .column {
@@ -165,7 +169,8 @@ article {
 } 
 
 /* Thumb Lists */
-ul.thumblist {
+.thumblist {
+  padding: 0;
   li {
     list-style: none;
     margin: 0;
@@ -195,16 +200,17 @@ ul.thumblist {
   }
 }
 
-ul.thumblist-grid {
+.thumblist-grid {
   margin: 2em 0;
-
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   li {
     list-style: none;
     margin-left: 0;
     margin-bottom: 2em;
     width: 46%;
     margin-right: 8%;
-    float: left;
     text-align: center;
     font-size: 0.8em;
 
@@ -244,12 +250,7 @@ ul.thumblist-grid {
     }
   }
 
-  /* TEMP FIX FOR NOW, NEED TO GET RID OF FLOAT AND USE FLEXBOX OR GRID!! */
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
-}
+
+} 
 

@@ -13,7 +13,7 @@ body {
   font-family: $body-font-family;
   color: $text-color;
   font-size: 87.5%; /* 14px; */
-  line-height: 1.5em; /* 14px x 1.5em = 21px */
+  line-height: 1.5; /* 14px x 1.5em = 21px */
 }
 
 /* #HEADINGS
@@ -32,32 +32,32 @@ h6 {
 
 h1 {
   font-size: 3em; /* 48px / 16px = 3em */
-  line-height: 1em;
+  line-height: 1;
 }
 
 h2 {
   font-size: 2.25em; /* 36px / 16px = 2.25em */
-  line-height: 1.1em;
+  line-height: 1.1;
 }
 
 h3 {
   font-size: 1.5em; /* 24px / 16px = 1.5em */
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 1.3125em; /* 21px / 16px = 1.3125em */
-  line-height: 1.3em;
+  line-height: 1.3;
 }
 
 h5 {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 
 h6 {
   font-size: 1em; /* 16px / 16px = 1em */
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 /* #PARAGRAPHS */
@@ -65,9 +65,17 @@ p {
   margin: 0 0 0.5em 0;
   max-width: 38em; 
 }
+.centered p {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 strong {
   font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }
 
 /* #LINKS */
@@ -78,7 +86,7 @@ a {
 
 a:hover {
   color: $link-color-dark;
-  //text-decoration: underline;
+  // text-decoration: underline;
 }
 
 /* #BLOCK QUOTES  */
@@ -106,6 +114,16 @@ blockquote cite:before {
   text-align: center;
 }
 
+.full-width {
+  max-width: none;
+  width: 100%;
+}
+
+.horiz-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hidden {
   position: absolute;
   top: -9999px;
@@ -125,5 +143,5 @@ hr {
   border: 0;
   height: 1px;
   background: #ddd;
-  margin: 2em 0;
+  margin: 2em 0; 
 }

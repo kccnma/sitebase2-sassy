@@ -11,14 +11,12 @@ a.button {
   border: 1px solid $link-color;
   color: #fff;
   padding: 0.75em 1em;
-  -webkit-border-radius: 0.32em;
-  -moz-border-radius: 0.32em;
   border-radius: 0.32em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   border: none;
   cursor: pointer;
-  line-height: 1em;
+  line-height: 1; 
 }
 
 button.alt,

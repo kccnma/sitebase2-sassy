@@ -6,11 +6,18 @@ img.float-left {
   clear: both;
 }
 
+/* Clear Floats */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
 /* Circular images */
 img.circular {
   border-radius: 100%;
-}
-
+} 
+ 
 /* VIDEO */
 .video {
   width: 100%;

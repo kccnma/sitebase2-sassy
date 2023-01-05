@@ -29,8 +29,8 @@ form input[type=button],
 form input[type=submit], 
 form input[type=reset] {
 	width: auto;
-	background-color: #39c;
-    border: 1px solid #39c;
+	background-color: $link-color;
+    border: 1px solid $link-color;
 	color: #fff;
 	padding: .75em 1em;
 	-webkit-border-radius: .32em;
@@ -40,8 +40,8 @@ form input[type=reset] {
 	margin-bottom: .5em;
     
     &:hover {
-        background-color: #069;
-        border-color: #069;
+        background-color: $link-color-dark;
+        border-color: $link-color-dark;
     }
     
 }

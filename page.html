@@ -2,53 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Site Name | Sub Title</title>
-  <meta name="description"
-    content="A sub-page example for Site Base, minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
+  <meta name="description" content="A sub-page example for SiteBase, minimalistic HTML + CSS + JS base front-end framework for simple web site projects.">
 
   <!-- VIEWPORT FOR MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- FOR IE/EDGE -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- MAIN CSS FILE -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header class="site-header toggle-nav">
-    <div class="container">
-      <div class="site-branding">
-        <h1><a href="index.html">Site Name</a> / Sub Title</h1>
-      </div>
-      <nav class="site-navigation ">
-        <div class="menu-button navicon">Menu</div>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="selected">
-            <a href="pages.html">Pages</a>
-            <ul>
-              <li><a href="page.html">Sub Page</a></li>
-              <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
-              <li><a href="post.html">Post</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <div class="site-id">
+      <h1><a href="index.html">Site Name</a> / Sub Title</h1>
     </div>
-    <!-- END CONTAINER -->
+    <nav class="site-navigation">
+      <button class="menu-button navicon">Menu</button>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="selected">
+          <a href="pages.html">Pages</a>
+          <ul>
+            <li><a href="page.html">Sub Page</a></li>
+            <li><a href="page-sidebar.html">Sub Page w/ Sidebar</a></li>
+            <li><a href="post.html">Post</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="site-main">
     <section class="hero text-centered">
       <h1>Sub Page</h1>
-      <p>This is a full-width sub page example.</p>
+      <p>This is a standard sigle column sub page example.</p>
     </section>
 
-    <div class="container">
-      <section>
+    <section>
+      <div class="container">
         <h1>This is a Heading 1</h1>
         <h2>This is a Heading 2</h2>
         <h3>This is a Heading 3</h3>
@@ -149,19 +145,17 @@
         <button>Default Button Element</button>
 
         <h4>Horizontal Rule:</h4>
-        <hr />
+        <hr>
 
         <h4>Images:</h4>
-        <img src="http://placehold.it/1500x500" />
+        <img src="https://via.placeholder.com/1500x500">
 
         <h4>Videos:</h4>
         <div class="video">
-          <iframe width="1280" height="720" src="https://www.youtube.com/embed/ru_mj49u_Xc?rel=0&amp;showinfo=0"
-            frameborder="0" allowfullscreen></iframe>
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/ru_mj49u_Xc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-      </section>
-    </div>
-    <!-- END CONTAINER -->
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
